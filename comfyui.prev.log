@@ -1,0 +1,336 @@
+** ComfyUI startup time: 2024-02-23 23:46:13.666715
+[2024-02-23 23:46] ** Platform: Windows
+[2024-02-23 23:46] ** Python version: 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)]
+[2024-02-23 23:46] ** Python executable: C:\Users\zzzzz\AppData\Local\Programs\Python\Python311\python.exe
+[2024-02-23 23:46] ** Log path: C:\Users\zzzzz\Documents\GitHub\ComfyUI\comfyui.log
+[2024-02-23 23:46] 
+Prestartup times for custom nodes:
+[2024-02-23 23:46]    0.1 seconds: C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager
+[2024-02-23 23:46] 
+[2024-02-23 23:46] Total VRAM 8192 MB, total RAM 16089 MB
+[2024-02-23 23:46] Forcing FP16.
+[2024-02-23 23:46] Set vram state to: NORMAL_VRAM
+[2024-02-23 23:46] Device: cuda:0 NVIDIA GeForce RTX 3070 Ti Laptop GPU : cudaMallocAsync
+[2024-02-23 23:46] VAE dtype: torch.bfloat16
+[2024-02-23 23:46] Using pytorch cross attention
+[2024-02-23 23:46] ### Loading: ComfyUI-Manager (V2.7.2)
+[2024-02-23 23:46] ## ComfyUI-Manager: installing dependencies
+[2024-02-23 23:46]  Collecting GitPython (from -r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+[2024-02-23 23:46]    Downloading GitPython-3.1.42-py3-none-any.whl.metadata (12 kB)
+[2024-02-23 23:46]  Collecting matrix-client==0.4.0 (from -r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 2))
+[2024-02-23 23:46]    Downloading matrix_client-0.4.0-py2.py3-none-any.whl (43 kB)
+[2024-02-23 23:46]       -------------------------------------- 43.5/43.5 kB 537.0 kB/s eta 0:00:00
+[2024-02-23 23:46]  Requirement already satisfied: transformers in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from -r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (4.38.1)
+[2024-02-23 23:46]  Requirement already satisfied: huggingface-hub>0.20 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from -r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 4)) (0.20.3)
+[2024-02-23 23:46]  Requirement already satisfied: requests~=2.22 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from matrix-client==0.4.0->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 2)) (2.31.0)
+[2024-02-23 23:46]  Collecting urllib3~=1.21 (from matrix-client==0.4.0->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 2))
+[2024-02-23 23:46]    Downloading urllib3-1.26.18-py2.py3-none-any.whl.metadata (48 kB)
+[2024-02-23 23:46]       ---------------------------------------- 48.9/48.9 kB 1.2 MB/s eta 0:00:00
+[2024-02-23 23:46]  Collecting gitdb<5,>=4.0.1 (from GitPython->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+[2024-02-23 23:46]    Downloading gitdb-4.0.11-py3-none-any.whl.metadata (1.2 kB)
+[2024-02-23 23:46]  Requirement already satisfied: filelock in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (3.13.1)
+[2024-02-23 23:46]  Requirement already satisfied: numpy>=1.17 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (1.26.4)
+[2024-02-23 23:46]  Requirement already satisfied: packaging>=20.0 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (23.2)
+[2024-02-23 23:46]  Requirement already satisfied: pyyaml>=5.1 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (6.0.1)
+[2024-02-23 23:46]  Requirement already satisfied: regex!=2019.12.17 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (2023.12.25)
+[2024-02-23 23:46]  Requirement already satisfied: tokenizers<0.19,>=0.14 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (0.15.2)
+[2024-02-23 23:46]  Requirement already satisfied: safetensors>=0.4.1 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (0.4.2)
+[2024-02-23 23:46]  Requirement already satisfied: tqdm>=4.27 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (4.66.2)
+[2024-02-23 23:46]  Requirement already satisfied: fsspec>=2023.5.0 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from huggingface-hub>0.20->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 4)) (2024.2.0)
+[2024-02-23 23:46]  Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from huggingface-hub>0.20->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 4)) (4.9.0)
+[2024-02-23 23:46]  Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+[2024-02-23 23:46]    Downloading smmap-5.0.1-py3-none-any.whl.metadata (4.3 kB)
+[2024-02-23 23:46]  Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from requests~=2.22->matrix-client==0.4.0->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 2)) (3.3.2)
+[2024-02-23 23:46]  Requirement already satisfied: idna<4,>=2.5 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from requests~=2.22->matrix-client==0.4.0->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 2)) (3.6)
+[2024-02-23 23:46]  Requirement already satisfied: certifi>=2017.4.17 in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from requests~=2.22->matrix-client==0.4.0->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 2)) (2024.2.2)
+[2024-02-23 23:46]  Requirement already satisfied: colorama in c:\users\zzzzz\appdata\local\programs\python\python311\lib\site-packages (from tqdm>=4.27->transformers->-r C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 3)) (0.4.6)
+[2024-02-23 23:46]  Downloading GitPython-3.1.42-py3-none-any.whl (195 kB)
+[2024-02-23 23:46]     ---------------------------------------- 195.4/195.4 kB 1.2 MB/s eta 0:00:00
+[2024-02-23 23:46]  Downloading gitdb-4.0.11-py3-none-any.whl (62 kB)
+[2024-02-23 23:46]     ---------------------------------------- 62.7/62.7 kB 1.1 MB/s eta 0:00:00
+[2024-02-23 23:46]  Downloading urllib3-1.26.18-py2.py3-none-any.whl (143 kB)
+[2024-02-23 23:46]     ---------------------------------------- 143.8/143.8 kB 1.4 MB/s eta 0:00:00
+[2024-02-23 23:46]  Downloading smmap-5.0.1-py3-none-any.whl (24 kB)
+[2024-02-23 23:46]  Installing collected packages: urllib3, smmap, gitdb, matrix-client, GitPython
+[2024-02-23 23:46]    Attempting uninstall: urllib3
+[2024-02-23 23:46]      Found existing installation: urllib3 2.2.1
+[2024-02-23 23:46]      Uninstalling urllib3-2.2.1:
+[2024-02-23 23:46]        Successfully uninstalled urllib3-2.2.1
+[2024-02-23 23:46]  Successfully installed GitPython-3.1.42 gitdb-4.0.11 matrix-client-0.4.0 smmap-5.0.1 urllib3-1.26.18
+[2024-02-23 23:46] ## ComfyUI-Manager: installing dependencies done.
+[2024-02-23 23:46] ### ComfyUI Revision: 2008 [f81dbe26] | Released on '2024-02-21'
+[2024-02-23 23:46] 
+Import times for custom nodes:
+[2024-02-23 23:46]   10.4 seconds: C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager
+[2024-02-23 23:46] 
+[2024-02-23 23:46] Starting server
+[2024-02-23 23:46] 
+[2024-02-23 23:46] To see the GUI go to: http://127.0.0.1:8188
+[2024-02-23 23:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-02-23 23:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-02-23 23:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-02-23 23:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-02-23 23:48] FETCH DATA from: C:\Users\zzzzz\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+[2024-02-24 00:12] got prompt
+[2024-02-24 00:12] model_type EPS
+[2024-02-24 00:12] adm 2816
+[2024-02-24 00:12] Using pytorch attention in VAE
+[2024-02-24 00:12] Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+[2024-02-24 00:12] Using pytorch attention in VAE
+[2024-02-24 00:12] clip missing: ['clip_l.text_projection', 'clip_l.logit_scale']
+[2024-02-24 00:12] clip unexpected: ['clip_l.transformer.text_model.embeddings.position_ids']
+[2024-02-24 00:12] loaded straight to GPU
+[2024-02-24 00:12] Requested to load SDXL
+[2024-02-24 00:12] Loading 1 new model
+[2024-02-24 00:12] Requested to load SDXLClipModel
+[2024-02-24 00:12] Loading 1 new model
+C:\Users\zzzzz\Documents\GitHub\ComfyUI\comfy\ldm\modules\attention.py:344: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at ..\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:308.)
+  out = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=mask, dropout_p=0.0, is_causal=False)
+[2024-02-24 00:12] Requested to load SDXL
+[2024-02-24 00:12] Loading 1 new model
+[2024-02-24 00:13] 100%|█████████████████| 20/20 [00:03<00:00,  7.05it/s]100%|█████████████████| 20/20 [00:03<00:00,  5.48it/s]
+[2024-02-24 00:13] Requested to load AutoencoderKL
+[2024-02-24 00:13] Loading 1 new model
+[2024-02-24 00:13] Prompt executed in 38.57 seconds
+[2024-02-24 00:24] got prompt
+[2024-02-24 00:24] 100%|█████████████████| 20/20 [00:10<00:00,  1.94it/s]100%|█████████████████| 20/20 [00:10<00:00,  1.95it/s]
+[2024-02-24 00:24] Prompt executed in 12.88 seconds
+[2024-02-24 00:25] got prompt
+[2024-02-24 00:25] Requested to load SDXL
+[2024-02-24 00:25] Loading 1 new model
+[2024-02-24 00:25] 100%|█████████████████| 20/20 [00:10<00:00,  1.95it/s]100%|█████████████████| 20/20 [00:10<00:00,  1.93it/s]
+[2024-02-24 00:25] Requested to load AutoencoderKL
+[2024-02-24 00:25] Loading 1 new model
+[2024-02-24 00:25] Prompt executed in 12.96 seconds
+[2024-02-24 00:25] got prompt
+[2024-02-24 00:25] Requested to load SDXL
+[2024-02-24 00:25] Loading 1 new model
+[2024-02-24 00:26] 100%|█████████████████| 20/20 [00:09<00:00,  1.95it/s]100%|█████████████████| 20/20 [00:09<00:00,  2.01it/s]
+[2024-02-24 00:26] Requested to load AutoencoderKL
+[2024-02-24 00:26] Loading 1 new model
+[2024-02-24 00:26] Prompt executed in 12.83 seconds
+[2024-02-24 01:08] got prompt
+[2024-02-24 01:08] Requested to load SDXL
+[2024-02-24 01:08] Loading 1 new model
+[2024-02-24 01:08] 100%|███████████████████| 5/5 [00:02<00:00,  1.96it/s]100%|███████████████████| 5/5 [00:02<00:00,  1.94it/s]
+[2024-02-24 01:08] Requested to load AutoencoderKL
+[2024-02-24 01:08] Loading 1 new model
+[2024-02-24 01:08] Prompt executed in 7.78 seconds
+[2024-02-24 01:08] got prompt
+[2024-02-24 01:08] Requested to load SDXL
+[2024-02-24 01:08] Loading 1 new model
+[2024-02-24 01:08] 100%|███████████████████| 8/8 [00:04<00:00,  1.97it/s]100%|███████████████████| 8/8 [00:04<00:00,  1.97it/s]
+[2024-02-24 01:08] Requested to load AutoencoderKL
+[2024-02-24 01:08] Loading 1 new model
+[2024-02-24 01:08] Prompt executed in 7.57 seconds
+[2024-02-24 01:08] got prompt
+[2024-02-24 01:08] Requested to load SDXL
+[2024-02-24 01:08] Loading 1 new model
+[2024-02-24 01:09] 100%|█████████████████| 10/10 [00:05<00:00,  1.96it/s]100%|█████████████████| 10/10 [00:05<00:00,  1.96it/s]
+[2024-02-24 01:09] Requested to load AutoencoderKL
+[2024-02-24 01:09] Loading 1 new model
+[2024-02-24 01:09] Prompt executed in 8.47 seconds
+[2024-02-24 01:09] got prompt
+[2024-02-24 01:09] Requested to load SDXL
+[2024-02-24 01:09] Loading 1 new model
+[2024-02-24 01:09] 100%|█████████████████| 10/10 [00:04<00:00,  1.97it/s]100%|█████████████████| 10/10 [00:04<00:00,  2.06it/s]
+[2024-02-24 01:09] Requested to load AutoencoderKL
+[2024-02-24 01:09] Loading 1 new model
+[2024-02-24 01:09] Prompt executed in 8.28 seconds
+[2024-02-24 01:09] got prompt
+[2024-02-24 01:09] Requested to load SDXL
+[2024-02-24 01:09] Loading 1 new model
+[2024-02-24 01:09] 100%|█████████████████| 20/20 [00:09<00:00,  1.95it/s]100%|█████████████████| 20/20 [00:09<00:00,  2.00it/s]
+[2024-02-24 01:09] Requested to load AutoencoderKL
+[2024-02-24 01:09] Loading 1 new model
+[2024-02-24 01:09] Prompt executed in 13.37 seconds
+[2024-02-24 01:10] got prompt
+[2024-02-24 01:10] Requested to load SDXL
+[2024-02-24 01:10] Loading 1 new model
+[2024-02-24 01:10] 100%|█████████████████| 16/16 [00:08<00:00,  1.93it/s]100%|█████████████████| 16/16 [00:08<00:00,  1.99it/s]
+[2024-02-24 01:10] Requested to load AutoencoderKL
+[2024-02-24 01:10] Loading 1 new model
+[2024-02-24 01:10] Prompt executed in 11.52 seconds
+[2024-02-24 01:27] got prompt
+[2024-02-24 01:27] model_type EPS
+[2024-02-24 01:27] adm 2560
+[2024-02-24 01:27] Using pytorch attention in VAE
+[2024-02-24 01:27] Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+[2024-02-24 01:27] Using pytorch attention in VAE
+[2024-02-24 01:27] loaded straight to GPU
+[2024-02-24 01:27] Requested to load SDXLRefiner
+[2024-02-24 01:27] Loading 1 new model
+[2024-02-24 01:27] Requested to load SDXLRefinerClipModel
+[2024-02-24 01:27] Loading 1 new model
+[2024-02-24 01:27] Requested to load SDXLRefiner
+[2024-02-24 01:27] Loading 1 new model
+[2024-02-24 01:28] 100%|█████████████████| 24/24 [00:13<00:00,  1.48it/s]100%|█████████████████| 24/24 [00:13<00:00,  1.73it/s]
+[2024-02-24 01:28] Requested to load AutoencoderKL
+[2024-02-24 01:28] Loading 1 new model
+[2024-02-24 01:28] Prompt executed in 36.87 seconds
+[2024-02-24 01:28] got prompt
+[2024-02-24 01:28] Requested to load SDXLRefiner
+[2024-02-24 01:28] Loading 1 new model
+[2024-02-24 01:28] 100%|█████████████████| 28/28 [00:15<00:00,  1.51it/s]100%|█████████████████| 28/28 [00:15<00:00,  1.77it/s]
+[2024-02-24 01:28] Requested to load AutoencoderKL
+[2024-02-24 01:28] Loading 1 new model
+[2024-02-24 01:28] Prompt executed in 19.95 seconds
+[2024-02-24 01:28] got prompt
+[2024-02-24 01:28] Requested to load SDXLRefiner
+[2024-02-24 01:28] Loading 1 new model
+[2024-02-24 01:29] 100%|█████████████████| 28/28 [00:15<00:00,  1.48it/s]100%|█████████████████| 28/28 [00:15<00:00,  1.75it/s]
+[2024-02-24 01:29] Requested to load AutoencoderKL
+[2024-02-24 01:29] Loading 1 new model
+[2024-02-24 01:29] Prompt executed in 19.97 seconds
+[2024-02-24 01:29] got prompt
+[2024-02-24 01:29] Requested to load SDXLRefiner
+[2024-02-24 01:29] Loading 1 new model
+[2024-02-24 01:29] 100%|█████████████████| 28/28 [00:15<00:00,  1.47it/s]100%|█████████████████| 28/28 [00:15<00:00,  1.76it/s]
+[2024-02-24 01:29] Requested to load AutoencoderKL
+[2024-02-24 01:29] Loading 1 new model
+[2024-02-24 01:29] Prompt executed in 19.58 seconds
+[2024-02-24 01:30] got prompt
+[2024-02-24 01:30] Requested to load SDXLRefiner
+[2024-02-24 01:30] Loading 1 new model
+[2024-02-24 01:30] 100%|█████████████████| 20/20 [00:11<00:00,  1.50it/s]100%|█████████████████| 20/20 [00:11<00:00,  1.76it/s]
+[2024-02-24 01:30] Requested to load AutoencoderKL
+[2024-02-24 01:30] Loading 1 new model
+[2024-02-24 01:30] Prompt executed in 14.93 seconds
+[2024-02-24 01:31] got prompt
+[2024-02-24 01:31] Requested to load SDXLRefiner
+[2024-02-24 01:31] Loading 1 new model
+[2024-02-24 01:31] 100%|█████████████████| 20/20 [00:11<00:00,  1.79it/s]100%|█████████████████| 20/20 [00:11<00:00,  1.79it/s]
+[2024-02-24 01:31] Requested to load AutoencoderKL
+[2024-02-24 01:31] Loading 1 new model
+[2024-02-24 01:31] Prompt executed in 14.98 seconds
+[2024-02-24 01:31] got prompt
+[2024-02-24 01:31] Requested to load SDXLRefiner
+[2024-02-24 01:31] Loading 1 new model
+[2024-02-24 01:31] 100%|█████████████████| 27/27 [00:15<00:00,  1.76it/s]100%|█████████████████| 27/27 [00:15<00:00,  1.73it/s]
+[2024-02-24 01:31] Requested to load AutoencoderKL
+[2024-02-24 01:31] Loading 1 new model
+[2024-02-24 01:31] Prompt executed in 19.16 seconds
+[2024-02-24 01:32] got prompt
+[2024-02-24 01:32] Requested to load SDXLRefiner
+[2024-02-24 01:32] Loading 1 new model
+[2024-02-24 01:32] 100%|█████████████████| 27/27 [00:14<00:00,  1.77it/s]100%|█████████████████| 27/27 [00:14<00:00,  1.81it/s]
+[2024-02-24 01:32] Requested to load AutoencoderKL
+[2024-02-24 01:32] Loading 1 new model
+[2024-02-24 01:32] Prompt executed in 19.37 seconds
+[2024-02-24 01:32] got prompt
+[2024-02-24 01:32] Requested to load SDXLRefiner
+[2024-02-24 01:32] Loading 1 new model
+[2024-02-24 01:33] 100%|█████████████████| 27/27 [00:15<00:00,  1.78it/s]100%|█████████████████| 27/27 [00:15<00:00,  1.78it/s]
+[2024-02-24 01:33] Requested to load AutoencoderKL
+[2024-02-24 01:33] Loading 1 new model
+[2024-02-24 01:33] Prompt executed in 18.63 seconds
+[2024-02-24 01:33] got prompt
+[2024-02-24 01:33] model_type EPS
+[2024-02-24 01:33] adm 2816
+[2024-02-24 01:33] Using pytorch attention in VAE
+[2024-02-24 01:33] Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+[2024-02-24 01:33] Using pytorch attention in VAE
+[2024-02-24 01:33] clip missing: ['clip_l.text_projection', 'clip_l.logit_scale']
+[2024-02-24 01:33] clip unexpected: ['clip_l.transformer.text_model.embeddings.position_ids']
+[2024-02-24 01:33] loaded straight to GPU
+[2024-02-24 01:33] Requested to load SDXL
+[2024-02-24 01:33] Loading 1 new model
+[2024-02-24 01:33] Requested to load SDXLClipModel
+[2024-02-24 01:33] Loading 1 new model
+[2024-02-24 01:33] Requested to load SDXL
+[2024-02-24 01:33] Loading 1 new model
+[2024-02-24 01:34] 100%|█████████████████| 27/27 [00:14<00:00,  1.95it/s]100%|█████████████████| 27/27 [00:14<00:00,  1.92it/s]
+[2024-02-24 01:34] Requested to load AutoencoderKL
+[2024-02-24 01:34] Loading 1 new model
+[2024-02-24 01:34] Prompt executed in 39.99 seconds
+[2024-02-24 02:37] got prompt
+[2024-02-24 02:37] ERROR:root:Failed to validate prompt for output 6:
+[2024-02-24 02:37] ERROR:root:* LoraLoader 12:
+[2024-02-24 02:37] ERROR:root:  - Required input is missing: lora_name
+[2024-02-24 02:37] ERROR:root:Output will be ignored
+[2024-02-24 02:37] invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[2024-02-24 02:38] got prompt
+[2024-02-24 02:38] model_type EPS
+[2024-02-24 02:38] adm 2816
+[2024-02-24 02:38] Using pytorch attention in VAE
+[2024-02-24 02:38] Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+[2024-02-24 02:38] Using pytorch attention in VAE
+[2024-02-24 02:38] clip missing: ['clip_l.text_projection', 'clip_l.logit_scale']
+[2024-02-24 02:38] clip unexpected: ['clip_l.transformer.text_model.embeddings.position_ids']
+[2024-02-24 02:38] loaded straight to GPU
+[2024-02-24 02:38] Requested to load SDXL
+[2024-02-24 02:38] Loading 1 new model
+[2024-02-24 02:38] Requested to load SDXLClipModel
+[2024-02-24 02:38] Loading 1 new model
+[2024-02-24 02:38] Requested to load SDXL
+[2024-02-24 02:38] Loading 1 new model
+[2024-02-24 02:39] 100%|█████████████████| 20/20 [00:09<00:00,  2.18it/s]100%|█████████████████| 20/20 [00:09<00:00,  2.21it/s]
+[2024-02-24 02:39] Requested to load AutoencoderKL
+[2024-02-24 02:39] Loading 1 new model
+[2024-02-24 02:39] Prompt executed in 36.32 seconds
+[2024-02-24 02:40] got prompt
+[2024-02-24 02:40] Requested to load SDXLClipModel
+[2024-02-24 02:40] Loading 1 new model
+[2024-02-24 02:40] Requested to load SDXL
+[2024-02-24 02:40] Loading 1 new model
+[2024-02-24 02:40] 100%|█████████████████| 20/20 [00:08<00:00,  2.21it/s]100%|█████████████████| 20/20 [00:08<00:00,  2.26it/s]
+[2024-02-24 02:40] Requested to load AutoencoderKL
+[2024-02-24 02:40] Loading 1 new model
+[2024-02-24 02:40] Prompt executed in 13.44 seconds
+[2024-02-24 02:41] got prompt
+[2024-02-24 02:41] model_type EPS
+[2024-02-24 02:41] adm 2816
+[2024-02-24 02:42] Using pytorch attention in VAE
+[2024-02-24 02:42] Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+[2024-02-24 02:42] Using pytorch attention in VAE
+[2024-02-24 02:42] clip missing: ['clip_l.text_projection', 'clip_l.logit_scale']
+[2024-02-24 02:42] clip unexpected: ['clip_l.transformer.text_model.embeddings.position_ids']
+[2024-02-24 02:42] loaded straight to GPU
+[2024-02-24 02:42] Requested to load SDXL
+[2024-02-24 02:42] Loading 1 new model
+[2024-02-24 02:42] Requested to load SDXLClipModel
+[2024-02-24 02:42] Loading 1 new model
+[2024-02-24 02:42] Requested to load SDXL
+[2024-02-24 02:42] Loading 1 new model
+[2024-02-24 02:42] 100%|█████████████████| 24/24 [00:22<00:00,  1.19it/s]100%|█████████████████| 24/24 [00:22<00:00,  1.07it/s]
+[2024-02-24 02:42] Requested to load AutoencoderKL
+[2024-02-24 02:42] Loading 1 new model
+[2024-02-24 02:42] Prompt executed in 76.73 seconds
+[2024-02-24 02:43] got prompt
+[2024-02-24 02:43] model_type EPS
+[2024-02-24 02:43] adm 2816
+[2024-02-24 02:43] Using pytorch attention in VAE
+[2024-02-24 02:43] Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+[2024-02-24 02:43] Using pytorch attention in VAE
+[2024-02-24 02:43] clip missing: ['clip_l.text_projection', 'clip_l.logit_scale']
+[2024-02-24 02:43] clip unexpected: ['clip_l.transformer.text_model.embeddings.position_ids']
+[2024-02-24 02:43] loaded straight to GPU
+[2024-02-24 02:43] Requested to load SDXL
+[2024-02-24 02:43] Loading 1 new model
+[2024-02-24 02:43] Requested to load SDXLClipModel
+[2024-02-24 02:43] Loading 1 new model
+[2024-02-24 02:43] Requested to load SDXL
+[2024-02-24 02:43] Loading 1 new model
+[2024-02-24 02:44] 100%|█████████████████| 24/24 [00:21<00:00,  1.19it/s]100%|█████████████████| 24/24 [00:21<00:00,  1.12it/s]
+[2024-02-24 02:44] Requested to load AutoencoderKL
+[2024-02-24 02:44] Loading 1 new model
+[2024-02-24 02:44] Prompt executed in 46.95 seconds
+[2024-02-24 02:45] got prompt
+[2024-02-24 02:45] model_type EPS
+[2024-02-24 02:45] adm 2816
+[2024-02-24 02:45] Using pytorch attention in VAE
+[2024-02-24 02:45] Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+[2024-02-24 02:45] Using pytorch attention in VAE
+[2024-02-24 02:45] clip missing: ['clip_l.text_projection', 'clip_l.logit_scale']
+[2024-02-24 02:45] clip unexpected: ['clip_l.transformer.text_model.embeddings.position_ids']
+[2024-02-24 02:45] loaded straight to GPU
+[2024-02-24 02:45] Requested to load SDXL
+[2024-02-24 02:45] Loading 1 new model
+[2024-02-24 02:45] Requested to load SDXLClipModel
+[2024-02-24 02:45] Loading 1 new model
+[2024-02-24 02:45] Requested to load SDXL
+[2024-02-24 02:45] Loading 1 new model
+[2024-02-24 02:45] 100%|█████████████████| 24/24 [00:21<00:00,  1.17it/s]100%|█████████████████| 24/24 [00:21<00:00,  1.12it/s]
+[2024-02-24 02:45] Requested to load AutoencoderKL
+[2024-02-24 02:45] Loading 1 new model
+[2024-02-24 02:46] Prompt executed in 48.66 seconds
